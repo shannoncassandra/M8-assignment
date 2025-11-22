@@ -43,15 +43,24 @@ for (let i in moviesd) {
 
 //STEP 8
 let moviese = ['The Prestige', 'Emperors New Groove', 'Paranormal Activity', 'Hot Rod', 'Wicked', 'La La Land', 'Toy Story']
-
+let leastFavMovies = ['Sharknado', 'Fast and Furious', 'The Room']
+console.log(`Movies I like: \n\n${moviese.join("\n")} 
+	
+Movies I regret watching: \n\n${leastFavMovies.join("\n")}`)
 
 //STEP 9
+concatArray = moviese.concat(leastFavMovies)
+console.log(concatArray.sort().reverse())
 
 //STEP 10
+console.log(concatArray.pop())
 
 //STEP 11
+concatArray.push("Emperors New Groove")
+console.log(concatArray.shift())
 
 //STEP 12
+console.log()
 
 //STEP 13
 
