@@ -42,6 +42,8 @@ for (let i in moviesd) {
 		console.log(moviesd[i])}}
 
 //STEP 8
+let moviese = ['The Prestige', 'Emperors New Groove', 'Paranormal Activity', 'Hot Rod', 'Wicked', 'La La Land', 'Toy Story']
+
 
 //STEP 9
 
