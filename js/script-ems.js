@@ -1,59 +1,21 @@
-/*// CREATE AN ARRAY OF EMPLOYEES
-
+//CREATE AN ARRAY OF EMPLOYEES
+let employees = ["Bob", "Rhonda", "Scarlett", "Tim"]
+console.log(employees)
 
 // CHECK TO SEE IF STORAGE OBJECT EXISTS WHEN THE PAGE LOADS
 // IF DOES, RETURN STORAGE OBJECT INTO ARRAY INSTEAD OF POPULATED ARRAY
-
+function displayTaskList() {
+    // IF THERE ARE NO TASKS IN ARRAY, CHECK STORAGE
+    if (tasks.length === 0) {
+        // GET TASKS FROM STORAGE OR EMPTY STRING IF STORAGE IS ALSO EMPTY
+        storage = localStorage.getItem('tasks') || ''
+        // IF NOT EMPTY, CONVERT STRING TO ARRAY AND STORE IN TASKS VARIABLE
+        if (storage.length > 0) {
+            // tasks = storage.split('|') // WITHOUT JSON.PARSE
+            tasks = JSON.parse(localStorage.getItem('tasks'))
+        }
+    }
 
 // GET DOM ELEMENTS
+const $ = id => document.getElementById(id)
 
-
-// BUILD THE EMPLOYEES TABLE WHEN THE PAGE LOADS
-
-
-// ADD EMPLOYEE
-form.addEventListener('submit', (e) => {
-    // PREVENT FORM SUBMISSION
-
-    // GET THE VALUES FROM THE TEXT BOXES
-
-    // ADD THE NEW EMPLOYEE TO A NEW ARRAY OBJECT
-
-    // PUSH THE NEW ARRAY TO THE *EXISTING* EMPLOYEES ARRAY
-
-    // BUILD THE GRID
-
-    // RESET THE FORM
-
-    // SET FOCUS BACK TO THE ID TEXT BOX
-
-});
-
-// DELETE EMPLOYEE
-empTable.addEventListener('click', (e) => {
-    // CONFIRM THE DELETE
-
-        // GET THE SELECTED ROWINDEX FOR THE TR (PARENTNODE.PARENTNODE)
-
-        // REMOVE EMPLOYEE FROM ARRAY
-
-        // BUILD THE GRID
-
-});
-
-// BUILD THE EMPLOYEES GRID
-function buildGrid() {
-    // REMOVE THE EXISTING SET OF ROWS BY REMOVING THE ENTIRE TBODY SECTION
-
-    // REBUILD THE TBODY FROM SCRATCH
-
-    // LOOP THROUGH THE ARRAY OF EMPLOYEES
-    // REBUILDING THE ROW STRUCTURE
-
-    // BIND THE TBODY TO THE EMPLOYEE TABLE
-
-    // UPDATE EMPLOYEE COUNT
-
-    // STORE THE ARRAY IN STORAGE
-
-};*/

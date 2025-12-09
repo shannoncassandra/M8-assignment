@@ -59,15 +59,3 @@ console.log(concatArray.pop())
 concatArray.push("Emperors New Groove")
 console.log(concatArray.shift())
 
-//STEP 12
-console.log()
-
-//STEP 13
-
-//STEP 14
-
-//STEP 15
-
-//STEP 16
-
-//STEP 17
